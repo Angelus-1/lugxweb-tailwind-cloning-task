@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LUGX Gaming</title>
+
+  <!--
+     Tailwind CSS v4 (Browser Version)
+    It allows Tailwind to work directly in the browser without installation.
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<!--
+  BODY BACKGROUND
+  bg-gray-100 = light gray background for whole page
+-->
+<body class="bg-gray-100">
+
+
+
+<!--NAVBAR SECTION
+  NAVBAR CONTAINER
+  flex = items in a row
+  justify-between = space between logo, menu, button
+  items-center = vertical alignment
+  px-6 py-4 = padding
+  bg-blue-900 = dark blue background
+  text-white = white text
+-->
+<nav class="flex justify-between items-center px-6 py-4 bg-blue-900 text-white">
+
+  <!-- LOGO -->
+   <!-- LOGO -->
+<img src="image/logo.png" alt="LUGX Logo" class="h-10">
+  <!-- <h1 class="text-2xl font-bold">LUGX</h1> -->
+
+  <!-- NAV LINKS (hidden on mobile, visible on medium screens) -->
+  <ul class="hidden md:flex gap-6">
+    <li class="px-4 py-2 rounded-full">Home</li>
+    <li class="px-4 py-2 rounded-full">Our Shop</li>
+    <li class="px-4 py-2 rounded-full">Product Details</li>
+    <li class="px-4 py-2 rounded-full">Contact Us</li>
+
+
+      <!-- SIGN IN BUTTON -->
+  <button class="bg-pink-500 px-4 py-2 rounded-full">
+    Sign In
+  </button>
+
+  </ul>
+
+
+</nav>
+
+
+
+<!--
+  HERO SECTION
+  md:flex = side-by-side layout on medium screens and above
+  items-center = vertical alignment
+  justify-between = spacing between text and image area
+-->
+<section class="bg-[url('image/banner-bg.jpg')] text-white px-6 py-16 md:flex items-center justify-between rounded-b-[150px]">
+
+  <!-- LEFT SIDE TEXT -->
+  <div class="md:w-1/2">
+
+    <!-- SMALL TITLE -->
+    <p class="text-4xl">
+      Welcome to lugx
+    </p><br>
+
+    <!-- MAIN TITLE -->
+    <h1 class="text-4xl font-bold mb-4">
+      BEST GAMING SITE EVER!
+    </h1>
+
+    <!-- DESCRIPTION -->
+    <p class="text-white-300 mb-6">
+      LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. 
+      You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.
+    </p>
+    <img src="image/caption-dec.png" alt="LUGX Logo" class="">
+
+    <!-- SEARCH BOX -->
+    <div class="flex">
+      <!-- INPUT FIELD -->
+      <input class="bg-white rounded-full px-4 py-2 text-black w-full" 
+      placeholder="Type Something">
+
+      <!-- SEARCH BUTTON -->
+      <button class="bg-pink-500 px-4 py-2 rounded-full">
+        Search Now
+      </button>
+      
+    </div>
+
+  </div>
+
+  <div>
+      <img src="image/banner-image.jpg.jpeg" alt="LUGX Logo" class="h-70">
+  </div>
+
+</section>
+
+
+
+<!--
+  GRID LAYOUT
+  grid-cols-1 = 1 column on mobile
+  md:grid-cols-4 = 4 columns on desktop
+  gap-6 = space between cards
+-->
+<section class="px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-6">
+
+  <!-- CARD 1 -->
+  <div class="bg-white shadow p-6 text-center text-lg font-bold rounded-lg">
+
+    <img src="image/featured-01.png" alt="LUGX f1" class="h-50 bg-blue-600 rounded-full mx-auto mb-4">
+
+    <h3>Free Storage</h3>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="bg-white shadow p-6 text-center rounded-lg text-lg font-bold">
+
+      <img src="image/featured-02.png" alt="LUGX f2" class="h-50 bg-blue-600 rounded-full mx-auto mb-4">
+
+    <h3>User More</h3>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="bg-white shadow p-6 text-center rounded-lg text-lg font-bold">
+
+      <img src="image/featured-03.png" alt="LUGX f3" class="h-50 bg-blue-600 rounded-full mx-auto mb-4">
+    <h3>Reply Ready</h3>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="bg-white shadow p-6 text-center rounded-4xl height-5xl text-lg font-bold">
+
+      <img src="image/featured-04.png" alt="LUGX f4" class="h-50 bg-blue-600 rounded-full">
+    <h3>Easy Layout</h3>
+  </div>
+
+</section>
+
+
+
+<!-- TRENDING GAMES SECTION -->
+
+
+<section class="px-6 py-12">
+
+  <!-- SECTION HEADER -->
+  <div class="flex justify-between items-center mb-6">
+    <h2 class="text-2xl font-bold">Trending</h2>
+    <button class="text-pink-500 font-bold">View All</button>
+  </div>
+
+  <!-- SUB TITLE -->
+  <h2 class="text-xl font-bold mb-6">Trending Games</h2>
+
+  <!-- GAME CARDS GRID -->
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+    <!-- GAME CARD 1 -->
+    <div class="bg-white p-4 shadow rounded-lg">
+
+           <img src="image/trending-01.jpg.jpeg" alt="LUGX trending" class="h-full w-full ">
+
+      <p>$28</p>
+      <p>$20</p>
+      <p>Action</p>
+      <p>Assasin Creed</p>
+    </div>
+
+    <!-- GAME CARD 2 -->
+    <div class="bg-white p-4 shadow rounded-lg">
+      <p>$44</p>
+
+        <img src="image/trending-02.jpg.jpeg" alt="LUGX trending" class="h-full w-full ">
+  
+        <p>$28</p>
+      <p>Action</p>
+      <p>Assasin Creed</p>
+    </div>
+
+    <!-- GAME CARD 3 -->
+    <div class="bg-white p-4 shadow rounded-lg">
+      <p>$64</p>
+      <p>$44</p>
+
+        <img src="image/trending-03.jpg.jpeg" alt="LUGX trending" class="h-full w-full ">
+      <p>Action</p>
+      <p>Assasin Creed</p>
+    </div>
+
+    <!-- GAME CARD 4 -->
+    <div class="bg-white p-4 shadow rounded-lg">
+      <p>$32</p>
+
+        <img src="image/trending-04.jpg.jpeg" alt="LUGX trending" class="h-full w-full ">
+      <p>Action</p>
+      <p>Assasin Creed</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- TOP GAMES SECTION -->
+
+
+<section class="px-6 py-12">
+
+  <!-- HEADER -->
+  <div class="flex justify-between items-center mb-6">
+    <h2 class="text-2xl font-bold">TOP GAMES</h2>
+    <button class="text-pink-500 font-bold">View All</button>
+  </div>
+
+  <!-- SUB TITLE -->
+  <h2 class="text-xl font-bold mb-6">Most Played</h2>
+
+  <!-- GRID -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <!-- GAME 1 -->
+    <div class="bg-white p-4 shadow rounded-lg">
+
+      <img src="image/top-game-01.jpg.jpeg" alt="LUGX top" class="h-full w-full ">
+      <p>Adventure</p>
+      <p>Assasin Creed</p>
+      <p>Explore</p>
+    </div>
+
+    <!-- GAME 2 -->
+    <div class="bg-white p-4 shadow rounded-lg">
+      <img src="image/top-game-02.jpg.jpeg" alt="LUGX top" class="h-full w-full ">
+
+      <p>Adventure</p>
+      <p>Assasin Creed</p>
+      <p>Explore</p>
+    </div>
+
+    <!-- GAME 3 -->
+    <div class="bg-white p-4 shadow rounded-lg">
+
+      <img src="image/top-game-03.jpg.jpeg" alt="LUGX top" class="h-full w-full ">
+
+      <p>Adventure</p>
+      <p>Assasin Creed</p>
+      <p>Explore</p>
+    </div>
+    <!-- GAME 4 -->
+      <div class="bg-white p-4 shadow rounded-lg">    
+      <img src="image/top-game-04.jpg.jpeg" alt="LUGX top" class="h-full w-full ">
+
+      <p>Adventure</p>
+      <p>Assasin Creed</p>
+      <p>Explore</p>  
+      </div>
+
+      <!-- GAME 5 -->
+      <div class="bg-white p-4 shadow rounded-lg">  
+        <img src="image/top-game-05.jpg.jpeg" alt="LUGX top" class="h-full w-full ">
+        <p>Adventure</p>
+        <p>Assasin Creed</p>
+        <p>Explore</p>
+      </div>
+
+      <!-- GAME 6 -->
+      <div class="bg-white p-4 shadow rounded-lg">
+
+        <img src="image/top-game-06.jpg.jpeg" alt="LUGX top" class="h-full w-full ">
+        <p>Adventure</p>
+        <p>Assasin Creed</p>
+        <p>Explore</p>
+      </div>
+
+      
+
+
+  </div>
+</section>
+
+
+
+
+<!-- CATEGORIES SECTION -->
+
+
+<section class="px-6 py-12">
+
+  <h3 class="text-2xl font-bold mb-6">Categories</h3>
+  <h1 class="text-xl font-bold mb-6">Top Categories</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+
+    <div class="bg-white p-4 text-center">
+      <h4>Action</h4>
+      <img src="image/categories-01.jpg.jpeg" alt="LUGX category" class="h-full w-full ">
+    </div>
+    <div class="bg-white p-4 text-center"> <h4>Action</h4>
+    <img src="image/categories-05.jpg.jpeg" alt="LUGX category" class="h-full w-full ">
+    </div>
+    <div class="bg-white p-4 text-center"> <h4>Action</h4>
+    <img src="image/categories-03.jpg.jpeg" alt="LUGX category" class="h-full w-full ">
+    </div>
+    <div class="bg-white p-4 text-center"> <h4>Action</h4>
+    <img src="image/categories-04.jpg.jpeg" alt="LUGX category" class="h-full w-full ">
+    </div>
+    <div class="bg-white p-4 text-center"> <h4>Action</h4>
+    <img src="image/categories-05.jpg.jpeg" alt="LUGX category" class="h-full w-full ">
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="flex bg-[url('image/cta-bg.jpg.jpeg')] gap-50 h-full items-center justify-center text-white rounded-t-[150px]">
+
+<!-- SHOP SECTION -->
+
+
+<div class="bg-gray-400 h-70 w-60 text-black text-center">
+
+  <h2 class="text-red-500">Our Shop</h2>
+
+  <h1 class="text-3xl font-bold mt-2">
+    Go Pre-Order Buy & Get Best Prices For You!
+  </h1>
+
+  <p class="mt-4 text-gray-300">
+    Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.
+  </p>
+
+  <button class="mt-6 bg-pink-500 px-6 py-3 rounded-full">
+    Shop Now
+  </button>
+
+</div>
+
+
+
+
+<!-- NEWSLETTER SECTION -->
+
+
+<div class="bg-gray-400 h-70 w-60 text-black text-center">
+
+  <h2 class=" text-red-500 ">NEWSLETTER</h2>
+
+  <h1 class="font-bold mt-4">
+    Get Up To $100 Off Just Buy Subscribe Newsletter!
+  </h1>
+
+  <div class="mt-6 flex justify-center">
+
+    <input class="px-4 py-2 border" placeholder="Your email...">
+
+    <button class="bg-pink-500 px-2 py-1 text-white">
+      Subscribe Now
+    </button>
+
+  </div>
+</div>
+
+
+</section>
+
+<!-- FOOTER -->
+
+
+<footer class="bg-blue-900 text-white text-center p-6">
+
+  <p>Copyright © 2048 LUGX Gaming Company. All rights reserved.</p>
+  <p>Design: TemplateMo</p>
+
+</footer>
+
+</body>
+</html>
