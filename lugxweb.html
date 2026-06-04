@@ -10,153 +10,108 @@
   -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-
-<!--
-  BODY BACKGROUND
-  bg-gray-100 = light gray background for whole page
--->
 <body class="bg-gray-100">
 
-
-
-<!--NAVBAR SECTION
-  NAVBAR CONTAINER
-  flex = items in a row
-  justify-between = space between logo, menu, button
-  items-center = vertical alignment
-  px-6 py-4 = padding
-  bg-blue-900 = dark blue background
-  text-white = white text
--->
-<nav class="flex justify-between items-center px-6 py-4 bg-blue-900 text-white">
-
-  <!-- LOGO -->
-   <!-- LOGO -->
+<nav class="flex fixed w-full rounded-b-lg justify-between items-center px-6 py-4 bg-blue-500 text-white">
+  
 <img src="image/logo.png" alt="LUGX Logo" class="h-10">
   <!-- <h1 class="text-2xl font-bold">LUGX</h1> -->
 
-  <!-- NAV LINKS (hidden on mobile, visible on medium screens) -->
-  <ul class="hidden md:flex gap-6">
-    <li class="px-4 py-2 rounded-full">Home</li>
-    <li class="px-4 py-2 rounded-full">Our Shop</li>
-    <li class="px-4 py-2 rounded-full">Product Details</li>
-    <li class="px-4 py-2 rounded-full">Contact Us</li>
+  <!-- NAV LINKS -->
+  <ul class="flex  items-center justify-center gap-7 text-white *:text-lg">
 
-
+    <li> <a href="" class="hover:bg-blue-400 px-4 py-1 rounded-full">home</a></li>
+    <li><a href="" class="px-4 py-1 rounded-3xl hover:bg-blue-400" >our shop</a></li>
+    <li><a href="" class="px-4 py-1 rounded-3xl hover:bg-blue-400" >product details</a></li>
+    <li  class="px-4 py-1 rounded-3xl hover:bg-blue-400"><a href="">contact us</a></li>
       <!-- SIGN IN BUTTON -->
-  <button class="bg-pink-500 px-4 py-2 rounded-full">
-    Sign In
-  </button>
+   <li> <button class="bg-pink-500 px-4 py-2 rounded-full">  <a href="">sign in</a></button> </li>
 
   </ul>
-
-
+  
 </nav>
+   
+<!--HERO SECTION-->
+<section class="bg-[url('image/banner-bg.jpg')] h-180 text-white px-6 py-16 md:flex items-center justify-between rounded-b-[150px]">
 
+  <div class="w-150 ml-10">
+    <p class="text-4xl">Welcome to lugx</p><br>
+    <h1 class="text-4xl font-bold mb-4">BEST GAMING SITE <br> EVER!</h1>
+    <img src="image/caption-dec.png" alt="red line" class="">
 
-
-<!--
-  HERO SECTION
-  md:flex = side-by-side layout on medium screens and above
-  items-center = vertical alignment
-  justify-between = spacing between text and image area
--->
-<section class="bg-[url('image/banner-bg.jpg')] text-white px-6 py-16 md:flex items-center justify-between rounded-b-[150px]">
-
-  <!-- LEFT SIDE TEXT -->
-  <div class="md:w-1/2">
-
-    <!-- SMALL TITLE -->
-    <p class="text-4xl">
-      Welcome to lugx
-    </p><br>
-
-    <!-- MAIN TITLE -->
-    <h1 class="text-4xl font-bold mb-4">
-      BEST GAMING SITE EVER!
-    </h1>
-
-    <!-- DESCRIPTION -->
-    <p class="text-white-300 mb-6">
-      LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. 
+    <p class="text-white-300 mb-6">LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. 
       You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.
     </p>
-    <img src="image/caption-dec.png" alt="LUGX Logo" class="">
 
     <!-- SEARCH BOX -->
-    <div class="flex">
-      <!-- INPUT FIELD -->
-      <input class="bg-white rounded-full px-4 py-2 text-black w-full" 
-      placeholder="Type Something">
+    <div class="flex relative">
 
-      <!-- SEARCH BUTTON -->
-      <button class="bg-pink-500 px-4 py-2 rounded-full">
-        Search Now
-      </button>
+      <input placeholder="Type Something" class="bg-white rounded-full px-4 py-2
+     text-black w-full " > <!-- INPUT FIELD -->
+      <button class="bg-pink-500 px-4 py-2 rounded-full absolute right-0 ">Search Now</button><!-- SEARCH BUTTON -->
       
     </div>
 
   </div>
 
-  <div>
-      <img src="image/banner-image.jpg.jpeg" alt="LUGX Logo" class="h-70">
+  <div class="relative">
+    <p class="absolute -top-4 -right-4 bg-pink-500 text-white px-4 py-2 rounded-full">$22</p>
+      <img src="image/banner-image.jpg.jpeg" alt="LUGX Logo" class="h-80">
+      <p class="absolute -bottom-4 -left-4 bg-pink-500 text-white px-4 py-2 rounded-full">-40%</p>
   </div>
 
 </section>
 
 
 
-<!--
-  GRID LAYOUT
-  grid-cols-1 = 1 column on mobile
-  md:grid-cols-4 = 4 columns on desktop
-  gap-6 = space between cards
--->
-<section class="px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-6">
+<!--GRID LAYOUT-->
+<section class="flex flex-wrap w-full p-5  items-center gap-5 justify-center absolute -bottom-2/4 ">
 
   <!-- CARD 1 -->
-  <div class="bg-white shadow p-6 text-center text-lg font-bold rounded-lg">
+  <div class=" p-6 gap-4 bg-white shadow w-65 rounded-2xl ">
 
-    <img src="image/featured-01.png" alt="LUGX f1" class="h-50 bg-blue-600 rounded-full mx-auto mb-4">
+    <img src="image/featured-01.png" alt="LUGX f1" class="p-7 bg-blue-600 rounded-full  ">
 
-    <h3>Free Storage</h3>
+    <h3 class="font-bold uppercase ">Free Storage</h3>
   </div>
 
   <!-- CARD 2 -->
-  <div class="bg-white shadow p-6 text-center rounded-lg text-lg font-bold">
+  <div class=" w-[250px] p-6 flex flex-col items-center justify-center gap-4 bg-white shadow-xl rounded-[30px]">
 
-      <img src="image/featured-02.png" alt="LUGX f2" class="h-50 bg-blue-600 rounded-full mx-auto mb-4">
+      <img src="image/featured-02.png" alt="LUGX f2" class="p-7 bg-blue-600 rounded-full ">
 
-    <h3>User More</h3>
+    <h3 class="font-bold uppercase">User More</h3>
   </div>
 
   <!-- CARD 3 -->
-  <div class="bg-white shadow p-6 text-center rounded-lg text-lg font-bold">
+  <div class=" w-[250px] p-6 flex flex-col items-center justify-center gap-4 bg-white shadow-xl rounded-[30px]">
 
-      <img src="image/featured-03.png" alt="LUGX f3" class="h-50 bg-blue-600 rounded-full mx-auto mb-4">
-    <h3>Reply Ready</h3>
+      <img src="image/featured-03.png" alt="LUGX f3" class="p-7 bg-blue-600 rounded-full ">
+    <h3 class="font-bold uppercase">Reply Ready</h3>
   </div>
 
   <!-- CARD 4 -->
-  <div class="bg-white shadow p-6 text-center rounded-4xl height-5xl text-lg font-bold">
+  <div class=" w-[250px] p-6 flex flex-col items-center justify-center gap-4 bg-white shadow-xl rounded-[30px]">
 
-      <img src="image/featured-04.png" alt="LUGX f4" class="h-50 bg-blue-600 rounded-full">
-    <h3>Easy Layout</h3>
+      <img src="image/featured-04.png" alt="LUGX f4" class="p-7 bg-blue-600 rounded-full ">
+    <h3 class="font-bold uppercase">Easy Layout</h3>
   </div>
 
 </section>
+
+
 
 
 
 <!-- TRENDING GAMES SECTION -->
 
 
-<section class="px-6 py-12">
+<section class="grid px-20  pt-50  ">
 
   <!-- SECTION HEADER -->
   <div class="flex justify-between items-center mb-6">
-    <h2 class="text-2xl font-bold">Trending</h2>
-    <button class="text-pink-500 font-bold">View All</button>
+    <h2 class="text-2xl font-bold text-red-500">Trending</h2>
+    <button class="bg-red-400 text-white p-4  uppercase font-bold rounded-full">View All</button>
   </div>
 
   <!-- SUB TITLE -->
